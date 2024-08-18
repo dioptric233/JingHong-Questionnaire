@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded mx-30 mt-30">
+  <div class="rounded mx-5 mt-30">
     <div class="flex justify-between">
       <div class="flex-col">
         <div class="flex items-center gap-20">
@@ -47,7 +47,6 @@ const emits = defineEmits(['update:answer']);
 
 const localAnswer = ref(props.answer);
 const errorMessage = ref('');
-
 watch(localAnswer, (newAnswer) => {
   emits('update:answer', newAnswer);
 });
